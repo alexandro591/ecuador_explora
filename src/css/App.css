@@ -1,0 +1,176 @@
+.App {
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+
+}
+
+.App-main {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  color: black;
+  overflow-y: scroll;
+}
+
+#main {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar {
+  width: 50vw;
+  height: 100%;
+  margin-left: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  user-select: none;
+}
+
+#navbar{
+  background-color: black;
+}
+
+.nav-item{
+  color: white;
+  cursor: pointer;
+  display:flex;
+  flex-direction: column;
+  width: 6vw;
+}
+
+.nav-item button{
+  font-size: 2vh;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.city{
+  cursor: pointer;
+}
+
+.description{
+  font-size: calc( 3vh + 3px );
+  font-weight: 300;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.shortdescription{
+  color: rgb(60, 80, 99);
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: calc( 2.5vh + 2px );
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 250;
+}
+
+.mapaEcuador{
+  position: relative;
+  margin: auto;
+  margin-top: 10%;
+  width: 65%;
+  filter: drop-shadow(-1px 1px 5px black) 
+}
+
+.nav-item button:active,
+.nav-item button:focus,
+.nav-item button:hover,
+.nav-item:active,
+.nav-item:focus,
+.nav-item:hover,
+#home, #home button
+{
+  -webkit-tap-highlight-color:transparent;
+  outline: 0;
+  box-shadow: transparent;
+  filter: drop-shadow(-1px 1px 10px rgb(0, 204, 255)) 
+  
+}
+
+hr{
+  min-width: 80vw;
+  max-width: 80vw;
+  text-align: center;
+}
+
+.topbar{
+  
+  min-width: 80vw;
+  max-width: 80vw;
+  margin: auto;
+  margin-top: 5%;
+  background: rgb(254,255,0);
+  background: linear-gradient(90deg, rgba(254,255,0,1) 0%, rgba(0,0,255,1) 49%, rgba(255,0,0,1) 100%);
+  border-radius: 200px;
+  margin-bottom: 5%;
+  border: solid;
+  border-color: black;
+}
+
+.topbar img{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 9vw;;
+}
+
+.carousel{
+  padding-top: 7%;
+  padding-bottom: 3%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  height: 20vh;
+  filter: drop-shadow(0.5px -0.5px 1px rgb(0, 0, 0))
+}
+
+.carousel-item img{
+  width: 32vh;
+  height: 20vh;
+  border-radius: 3vh;
+  filter: drop-shadow(1px 1px 3px rgb(35, 42, 44));
+  z-index: 0 !important;
+}
+
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+	font-size: 4vh;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.712);
+}
+
+.carousel-item .des{
+  position: relative;
+  margin-top: -2vh;
+  z-index: 1 !important;
+  margin-bottom: 0;
+  overflow-y: auto;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 992px){
+  .nav-bar {
+    width: 100vw;
+    margin-left: 0;
+  }
+  .nav-item{
+    width:25%;
+  }
+  .nav-item button{
+    font-size: 1.5vh;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
